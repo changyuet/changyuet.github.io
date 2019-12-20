@@ -20,6 +20,20 @@ permalink: /404.html
 	</div>
 </header>
 
+<script src="http://cdn.bootcss.com/purl/2.3.1/purl.min.js"></script>
+
 <script>
-	document.body.classList.add('page-fullscreen');
+var url = purl();
+if (url.attr('host') == 'www.cqcyu.cc') {
+    var old_url = url.attr('source');
+    var new_url = old_url.replace('www.cqcyu.cc', "www.cqcyu.cc");
+    window.location.replace(new_url); 
+}else if (url.attr('host') == 'www.cqcyu.cc') {
+    var old_url = url.attr('source');
+    var new_url = old_url.replace('www.cqcyu.cc', "www.cqcyu.cc");
+    window.location.replace(new_url);
+}else {
+    window.location.href="http://www.cqcyu.cc/cn/index.html";
+}
+    
 </script>
